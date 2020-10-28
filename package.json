@@ -13,7 +13,7 @@
   "homepage": "https://github.com/ahgilak/estilos#readme",
   "main": "./umd/estilos.js",
   "scripts": {
-    "tsc": "tsc",
+    "build": "rm umd -rf && babel src -d umd --extensions '.ts' && tsc --emitDeclarationOnly",
     "doc": "typedoc"
   },
   "keywords": [
@@ -26,6 +26,10 @@
   "author": "Ah Gilak <ah.gilak@outlook.com>",
   "license": "MIT",
   "devDependencies": {
+    "@babel/cli": "^7.12.1",
+    "@babel/core": "^7.12.3",
+    "@babel/plugin-transform-modules-umd": "^7.12.1",
+    "@babel/plugin-transform-typescript": "^7.12.1",
     "typedoc": "^0.19.2",
     "typescript": "^4.0.3"
   },
