@@ -11,9 +11,9 @@
     "email": "ah.gilak@outlook.com"
   },
   "homepage": "https://github.com/ahgilak/estilos#readme",
-  "main": "./umd/estilos.js",
+  "main": "./build/estilos.js",
   "scripts": {
-    "build": "rm umd -rf && babel src -d umd --extensions '.ts' && tsc --emitDeclarationOnly",
+    "build": "rm build -rf && babel src -d build --extensions '.ts' && tsc --emitDeclarationOnly",
     "doc": "typedoc"
   },
   "keywords": [
@@ -35,6 +35,6 @@
   },
   "files": [
     "README.md",
-    "umd/"
+    "build/"
   ]
 }
