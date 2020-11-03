@@ -14,7 +14,7 @@
   "main": "./build/estilos.js",
   "scripts": {
     "build": "rm build -rf && babel src -d build --extensions '.ts' && tsc --emitDeclarationOnly",
-    "doc": "typedoc && echo '' > docs/.nojeykll"
+    "doc": "typedoc && cp _config.yml docs"
   },
   "keywords": [
     "estilos",
